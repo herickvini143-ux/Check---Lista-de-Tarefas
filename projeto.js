@@ -94,3 +94,6 @@ function concluirTarefa(index) {
     tarefas[index].concluido = !tarefas[index].concluido;
     salvar_e_Atualizar();
 }
+
+//Inicializar o APP
+mostrarTarefas();
