@@ -82,3 +82,9 @@ function mostrarTarefas() {
         listaTarefas.appendChild(li);
     });
 }
+
+// Funcao para Remover as Tarefas
+function removerTarefa(index) {
+    tarefas.splice(index, 1);
+    salvar_e_Atualizar();
+}
