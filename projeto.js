@@ -13,3 +13,26 @@ let tarefas = (JSON.parse(localStorage.getItem('tarefas')) || []);
 botaoAdicionar.addEventListener('click', function(){
     adicionarTarefas();
 });
+
+// Criando as Funcoes
+
+// Funcao para Adicionar as Tarefas
+function adicionarTarefas (){
+    const tarefaDigitada = inputEntrada.value.trim();
+    
+    if (tarefaDigitada === "") {
+        return;
+    }
+
+    // Criando o objeto para guardar as tarefas adicionadas
+    const novaTarefa = {
+        texto: tarefaDigitada,
+        concluido: false
+    };
+    
+    tarefas.push(novaTarefa);
+    
+    salvar_e_Atualizar();
+    inputEntrada.value = "";
+    console.log("Lista de tarefas: ", tarefas);
+}
