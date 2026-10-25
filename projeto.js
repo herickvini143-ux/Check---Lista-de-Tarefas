@@ -88,3 +88,9 @@ function removerTarefa(index) {
     tarefas.splice(index, 1);
     salvar_e_Atualizar();
 }
+
+// Funcao para marcar a Tarefa como concluida
+function concluirTarefa(index) {
+    tarefas[index].concluido = !tarefas[index].concluido;
+    salvar_e_Atualizar();
+}
