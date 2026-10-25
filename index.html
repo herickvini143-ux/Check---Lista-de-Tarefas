@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Cabeçalho do Aplicativo -->
+        <header>
+            <h1>Check</h1>
+            <p>Organize suas tarefas de forma rápida e prática.</p>
+        </header>
+
+        <!-- Área de Cadastro de Tarefas -->
+        <div class="input-grupo">
+            <!-- O 'for' aponta exatamente para o 'id' do input -->
+            <label for="input-tarefa">Nova tarefa:</label>
+    
+            <input type="text" id="input-tarefa" placeholder="O que você precisa fazer?" autocomplete="off">
+    
+            <button id="btn-adicionar">Adicionar</button>
+        </div>
+
+        <!-- Área onde a lista de tarefas será exibida -->
+        <ul id="lista-tarefas">
+            <!-- As tarefas inseridas pelo JavaScript aparecerão aqui dinamicamente -->
+        </ul>
+    </main>
+
+    <!-- Link para o arquivo JavaScript (o 'defer' garante que o script rode após o HTML carregar) -->
+    <script src="projeto.js" defer></script>
+</body>
+</html>
