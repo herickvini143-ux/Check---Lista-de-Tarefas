@@ -36,3 +36,10 @@ function adicionarTarefas (){
     inputEntrada.value = "";
     console.log("Lista de tarefas: ", tarefas);
 }
+
+// Funcao para salvar e atualizar as tarefas no localStorage
+function salvar_e_Atualizar() {
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+
+    mostrarTarefas();
+}
