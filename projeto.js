@@ -43,3 +43,42 @@ function salvar_e_Atualizar() {
 
     mostrarTarefas();
 }
+
+// Funcao para Mostrar as tarefas em tela
+
+function mostrarTarefas() {
+    listaTarefas.innerHTML = "";
+
+    tarefas.forEach(function(tarefas, index) {
+        const li = document.createElement('li');
+        
+        // Desenvolvendo o checkbox de "Concluido"
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = tarefas.concluido;
+
+        checkbox.addEventListener('change', function() {
+            concluirTarefa(index);
+        });
+
+        const spanTexto = document.createElement('span');
+        spanTexto.textContent = tarefas.texto;
+
+        if(tarefas.concluido) {
+            li.classList.add("feito");
+        }
+
+        // Criando o botao de Deletar
+        const botaoDeletar = document.createElement('button');
+        botaoDeletar.textContent = "X";
+
+        botaoDeletar.addEventListener('click', function() {
+            removerTarefa(index);
+        });
+        
+        li.appendChild(spanTexto);
+        li.appendChild(checkbox);
+        li.appendChild(botaoDeletar);
+        listaTarefas.appendChild(li);
+    });
+}
