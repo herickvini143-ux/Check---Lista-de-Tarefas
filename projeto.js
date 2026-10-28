@@ -6,7 +6,7 @@ const inputEntrada = document.getElementById("input-tarefa");
 const botaoAdicionar = document.getElementById("btn-adicionar");
 const listaTarefas = document.getElementById("lista-tarefas");
 
-// Criando o vetor de Tarefas
+// Criando o vetor de Tarefas (carrega do localStorage se existir, ou inicia um array vazio)
 let tarefas = (JSON.parse(localStorage.getItem('tarefas')) || []);
 
 // Criando Evento de Click do Botao Adicionar
@@ -34,7 +34,6 @@ function adicionarTarefas (){
     
     salvar_e_Atualizar();
     inputEntrada.value = "";
-    console.log("Lista de tarefas: ", tarefas);
 }
 
 // Funcao para salvar e atualizar as tarefas no localStorage
