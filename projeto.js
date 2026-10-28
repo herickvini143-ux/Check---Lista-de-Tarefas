@@ -46,6 +46,7 @@ function salvar_e_Atualizar() {
 // Funcao para Mostrar as tarefas em tela
 
 function mostrarTarefas() {
+    // Limpa a lista antes de re-renderizar (uso seguro de innerHTML por não injetar dados externos, logo, não há risco de vulnerabilidades)
     listaTarefas.innerHTML = "";
 
     tarefas.forEach(function(tarefas, index) {
