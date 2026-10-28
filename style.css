@@ -120,7 +120,7 @@ header p {
 #lista-tarefas li span {
     flex: 1;
     font-size: 1rem;
-    word-break: break-word;
+    word-break: break-word; /* Garante que palavras compridas quebram para a linha seguinte */
 }
 
 /* --- ESTILO DE TAREFA CONCLUÍDA (.feito) --- */
