@@ -57,3 +57,10 @@ A Inteligência Artificial foi utilizada ao longo do desenvolvimento como uma fe
 * **Documentação & Comentários:** Ajuda na estruturação de comentários informativos no HTML, CSS e JavaScript, garantindo legibilidade técnica.
 
 * **Gestão do Histórico do Git:** Orientação no fluxo de commits incrementais e descritivos para manter um histórico limpo e profissional no repositório.
+  
+
+## 🌐 Evidência de Rede (Network)
+
+Teste de verificação de requisição efetuado na aba Network (Rede) do navegador através de servidor HTTP local.
+
+![Evidência da Aba Network](./Aba_de_Rede-Check.png)
