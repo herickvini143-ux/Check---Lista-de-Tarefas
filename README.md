@@ -57,6 +57,8 @@ A Inteligência Artificial foi utilizada ao longo do desenvolvimento como uma fe
 * **Documentação & Comentários:** Ajuda na estruturação de comentários informativos no HTML, CSS e JavaScript, garantindo legibilidade técnica.
 
 * **Gestão do Histórico do Git:** Orientação no fluxo de commits incrementais e descritivos para manter um histórico limpo e profissional no repositório.
+
+* **Ferramenta Utilizada:** A ferramenta utilizada para esse projeto foi o **Google Gemini.**
   
 
 ## 🌐 Evidência de Rede (Network)
